@@ -66,6 +66,9 @@ def find_single(arr: list)-> int:
     for i in arr:
         ans = ans^i
     return ans
+
+def missing_number(arr:list)->int:
+    pass
         
 
 if __name__ == "__main__":
