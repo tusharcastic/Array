@@ -57,10 +57,21 @@ def rotate_array(arr: list) -> list:
         arr[i], arr[n-i-1] = arr[n-i-1], arr[i]
     return arr
 
+
+def find_single(arr: list)-> int:
+    # you need to find a number occurring only once
+    # rest are appearing twice
+    # xor sum technique would be best for this problem
+    ans = 0
+    for i in arr:
+        ans = ans^i
+    return ans
+        
+
 if __name__ == "__main__":
-    l: list = [7,4,6,10,56,-4,9,-5,-45]
+    l: list = [3,6, 9,3, 8, 6,9]
     try:
-        print(rotate_array(l))
+        print(find_single(l))
     except:
         print("Exception caught")
 
